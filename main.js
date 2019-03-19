@@ -1,3 +1,3 @@
-require('./css/main.css');
+require('./css/main.scss');
 const show = require('./js/show.js');
-show('Webpack');
+show('Webpack'); 

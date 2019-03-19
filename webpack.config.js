@@ -15,10 +15,10 @@ module.exports = {
     rules: [
       {
         // 用正则去匹配要用该 loader 转换的 css 文件
-        test: /\.css$/,
-        use: ExtractTextPlugin.extract({
+        test: /\.scss$/,
+        use: ExtractTextPlugin.extract({ 
           fallback: "style-loader",
-          use: "css-loader"
+          use: ["css-loader","sass-loader"] 
         })
       },{
 		  test:/\.js$/, 
